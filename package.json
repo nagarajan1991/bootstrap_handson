@@ -10,7 +10,20 @@
   },
   "author": "",
   "license": "ISC",
-    "devDependencies": {
+  "devDependencies": {
     "lite-server": "^2.3.0"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/nagarajan1991/bootstrap_handson.git"
+  },
+  "bugs": {
+    "url": "https://github.com/nagarajan1991/bootstrap_handson/issues"
+  },
+  "homepage": "https://github.com/nagarajan1991/bootstrap_handson#readme",
+  "dependencies": {
+    "bootstrap": "^4.3.1",
+    "jquery": "^3.4.1",
+    "popper.js": "^1.12.9"
   }
 }
