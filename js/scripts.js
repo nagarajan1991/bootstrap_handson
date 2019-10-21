@@ -1,5 +1,5 @@
 $(document).ready(function(){
-    $("#mycarousel").carousel( { interval: 100 } );
+    $("#mycarousel").carousel( { interval: 3000 } );
     $("#carousel-pause").click(function(){
         $("#mycarousel").carousel('pause');
     });
