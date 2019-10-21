@@ -7,11 +7,13 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <meta http-equiv="x-ua-compatible" content="ie=edge">
 
+    <!-- build:css css/main.css -->
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.min.css">
     <link href="css/styles.css" rel="stylesheet">
     <link rel="stylesheet" href="node_modules/font-awesome/css/font-awesome.min.css">
     <link rel="stylesheet" href="node_modules/bootstrap-social/bootstrap-social.css">
+    <!-- endbuild -->
 
     <title>Ristorante Con Fusion</title>
 </head>
@@ -135,6 +137,7 @@
             <div class="row row-header">
                 <div class="col-12 col-sm-6">
                     <h1>Ristorante con Fusion</h1>
+                    <p>Test</p>
                     <p>We take inspiration from the World's best cuisines, and create a unique fusion experience. Our
                         lipsmacking creations will tickle your culinary senses!</p>
                 </div>
@@ -214,6 +217,7 @@
         </div>
     </div>
 
+    <div class="container">
     <div id="reservemodal2" class="modal fade" role="dialog">
         <div class="modal-dialog modal-lg" role="content">
             <!-- Modal content-->
@@ -264,6 +268,7 @@
             </div>
         </div>
     </div>
+</div>
 
 
     <div class="container">
@@ -481,50 +486,19 @@
             </div>
         </div>
     </footer>
+    <!-- build:js css/main.js -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS. -->
     <script src="node_modules/jquery/dist/jquery.slim.min.js"></script>
     <script src="node_modules/popper.js/dist/umd/popper.min.js"></script>
     <script src="node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
-
+    <script src="js/scripts.js"></script>
     <!-- ToolTip Activation -->
     <!--<script>
         $(document).ready(function () {
             $('[data-toggle="tooltip"]').tooltip();
         });
     </script>-->
-    <script>
-        $(document).ready(function(){
-            $("#mycarousel").carousel( { interval: 100 } );
-            $("#carousel-pause").click(function(){
-                $("#mycarousel").carousel('pause');
-            });
-            $("#carousel-play").click(function(){
-                $("#mycarousel").carousel('cycle');
-            });
-            $('[data-toggle="tooltip"]').tooltip();
-        });
-        $("#carouselButton1").click(function(){
-                if ($("#carouselButton1").children("span").hasClass('fa-pause')) {
-                    $("#mycarousel").carousel('pause');
-                    $("#carouselButton1").children("span").removeClass('fa-pause');
-                    $("#carouselButton1").children("span").addClass('fa-play');
-                }
-                else if ($("#carouselButton1").children("span").hasClass('fa-play')){
-                    $("#mycarousel").carousel('cycle');
-                    $("#carouselButton1").children("span").removeClass('fa-play');
-                    $("#carouselButton1").children("span").addClass('fa-pause');                    
-                }
-            });
-
-            $(document).ready(function(){
-            $("#reservebtn").click(function(){
-                $("#reservemodal2").modal();
-            });
-            $("#loginbtn").click(function(){
-                $("#loginModal2").modal();
-            });
-            });
-    </script>
+    <!-- endbuild -->
 </body>
 
 </html>
